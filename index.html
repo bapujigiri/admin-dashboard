@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local News Network | Your Trusted Source</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Source+Serif+Pro:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="date-time">
+                    <span id="current-date"></span>
+                    <span id="current-time"></span>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-header">
+            <div class="container">
+                <div class="logo-section">
+                    <div class="logo">
+                        <div class="logo-img">
+                            <i class="fas fa-tv" style="font-size: 60px; color: var(--primary);"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h1>Local News Network</h1>
+                            <p>Your Trusted Source for Local News</p>
+                        </div>
+                    </div>
+                    <div class="live-news">
+                        <span class="live-indicator"></span>
+                        <span class="live-text">LIVE</span>
+                    </div>
+                </div>
+
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#"><i class="fas fa-newspaper"></i> Latest News</a></li>
+                        <li><a href="#"><i class="fas fa-video"></i> Videos</a></li>
+                        <li><a href="#"><i class="fas fa-cloud-sun"></i> Weather</a></li>
+                        <li><a href="#"><i class="fas fa-broadcast-tower"></i> Live TV</a></li>
+                        <li><a href="#"><i class="fas fa-info-circle"></i> About Us</a></li>
+                        <li><a href="#"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                    </ul>
+
+                    <button class="admin-login-btn" id="adminLoginBtn">
+                        <i class="fas fa-lock"></i> Admin Login
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breaking News Ticker -->
+    <div class="breaking-news">
+        <div class="container">
+            <div class="breaking-news-content">
+                <div class="breaking-news-label">BREAKING NEWS</div>
+                <div class="breaking-news-text">Local government announces new infrastructure project to improve
+                    downtown transportation. Mayor to hold press conference at 3 PM today.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Stay Informed with Trusted Local News</h2>
+            <p>24/7 coverage of events, weather, sports, and community stories that matter to you. Bringing you the
+                latest updates from across our region.</p>
+            <button class="latest-news-btn">Watch Live Broadcast</button>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Top Stories Section -->
+            <div class="section-title">
+                <i class="fas fa-fire"></i>
+                <h3>Top Stories</h3>
+            </div>
+
+            <div class="news-grid">
+                <!-- News Card 1 -->
+                <div class="news-card">
+                    <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        alt="News Image">
+                    <div class="news-card-content">
+                        <span class="news-category">Politics</span>
+                        <h4>Mayor Announces New City Development Plan</h4>
+                        <p>The mayor revealed a 5-year plan focused on sustainable development and community
+                            improvements.</p>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> 2 hours ago</span>
+                            <span><i class="far fa-eye"></i> 1.2k views</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Card 2 -->
+                <div class="news-card">
+                    <img src="https://images.unsplash.com/photo-1574267432553-4b4628081c31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1131&q=80"
+                        alt="News Image">
+                    <div class="news-card-content">
+                        <span class="news-category">Sports</span>
+                        <h4>Local High School Wins State Championship</h4>
+                        <p>The Lincoln High School football team secured their first state title in 25 years last night.
+                        </p>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> 5 hours ago</span>
+                            <span><i class="far fa-eye"></i> 2.4k views</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Card 3 -->
+                <div class="news-card">
+                    <img src="https://images.unsplash.com/photo-1589652717521-10c0d092dea9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                        alt="News Image">
+                    <div class="news-card-content">
+                        <span class="news-category">Business</span>
+                        <h4>New Tech Company Brings 500 Jobs to Area</h4>
+                        <p>A Silicon Valley-based tech firm announced plans to open a regional office downtown.</p>
+                        <div class="news-meta">
+                            <span><i class="far fa-clock"></i> 1 day ago</span>
+                            <span><i class="far fa-eye"></i> 3.1k views</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Section -->
+            <div class="video-section">
+                <div class="section-title">
+                    <i class="fas fa-video"></i>
+                    <h3>Featured Videos</h3>
+                </div>
+
+                <div class="video-container">
+                    <div class="main-video">
+                        <iframe src="https://www.youtube.com/embed/7NN4RlKspW0" title="News Broadcast" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+
+                    <div class="video-sidebar">
+                        <div class="video-side-item">
+                            <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                                alt="Video Thumbnail">
+                            <div>
+                                <h5>Exclusive Interview with Police Chief</h5>
+                                <span class="news-meta"><i class="far fa-clock"></i> 3 hours ago</span>
+                            </div>
+                        </div>
+
+                        <div class="video-side-item">
+                            <img src="https://images.unsplash.com/photo-1574267432553-4b4628081c31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1131&q=80"
+                                alt="Video Thumbnail">
+                            <div>
+                                <h5>State Championship Game Highlights</h5>
+                                <span class="news-meta"><i class="far fa-clock"></i> 1 day ago</span>
+                            </div>
+                        </div>
+
+                        <div class="video-side-item">
+                            <img src="https://images.unsplash.com/photo-1588681664899-f142ff2dc9b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                                alt="Video Thumbnail">
+                            <div>
+                                <h5>City Council Meeting Highlights</h5>
+                                <span class="news-meta"><i class="far fa-clock"></i> 2 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Weather Section -->
+            <div class="weather-section">
+                <div class="section-title">
+                    <i class="fas fa-cloud-sun"></i>
+                    <h3>Local Weather</h3>
+                </div>
+
+                <div class="weather-container">
+                    <div class="weather-info">
+                        <div class="weather-icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <div class="weather-details">
+                            <h4>Sunny, 78°F</h4>
+                            <p>Feels like 80°F | Humidity: 45% | Wind: 5 mph</p>
+                            <p>Last updated: Just now</p>
+                        </div>
+                    </div>
+
+                    <div class="weather-forecast">
+                        <div class="forecast-day">
+                            <i class="fas fa-cloud-sun"></i>
+                            <p>Mon</p>
+                            <p>76°F</p>
+                        </div>
+                        <div class="forecast-day">
+                            <i class="fas fa-cloud-rain"></i>
+                            <p>Tue</p>
+                            <p>72°F</p>
+                        </div>
+                        <div class="forecast-day">
+                            <i class="fas fa-sun"></i>
+                            <p>Wed</p>
+                            <p>80°F</p>
+                        </div>
+                        <div class="forecast-day">
+                            <i class="fas fa-cloud"></i>
+                            <p>Thu</p>
+                            <p>74°F</p>
+                        </div>
+                        <div class="forecast-day">
+                            <i class="fas fa-sun"></i>
+                            <p>Fri</p>
+                            <p>82°F</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Local News Network</h4>
+                    <p>Your trusted source for local news, weather, sports, and community events. Serving our community
+                        since 1985.</p>
+                    <div class="social-icons" style="margin-top: 15px;">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Latest News</a></li>
+                        <li><a href="#">Weather</a></li>
+                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">Live TV</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Politics</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Health</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Entertainment</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 News Street, City, State 12345</li>
+                        <li><i class="fas fa-phone-alt"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@localnewsnetwork.com</li>
+                        <li><i class="fas fa-fax"></i> (555) 123-4568</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2023 Local News Network. All rights reserved. | <a href="#">Privacy Policy</a> | <a
+                        href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Admin Login Modal -->
+    <div class="modal" id="adminLoginModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Admin Login</h3>
+                <button class="close-modal" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="adminLoginForm">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Login to Admin Panel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
